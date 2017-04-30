@@ -1,0 +1,18 @@
+body{
+	color: blue;
+}
+
+img{
+	max-width: 100%;
+	height: auto;
+	margin: 0 0 10px 0;
+}
+
+@media screen and (max-width: 500px) {
+	
+	div {
+		width: auto;
+		float: none;
+		margin-right: 0;
+	}
+}
