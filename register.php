@@ -37,8 +37,8 @@ if(isset($_POST['btn-signup'])) {
 	
 	$check_user = $DBcon->query("SELECT username FROM users WHERE username='$uname'");
 	$count=$check_user->num_rows;
-	
-	if ($count==0) {
+
+		if ($count==0) {
 		
 		$query = "INSERT INTO users(fullname,username,email,password,whatsappno,usercategory) VALUES('$fname','$uname','$email','$hashed_password','$wno','$ucat')";
 
@@ -111,27 +111,8 @@ if(isset($_POST['btn-signup'])) {
          <div id="first-block">
             <div class="line">
                <div class="s-12 l-2">
-                  <p class="logo"><img src="img/Logo.png"></p>  <>
-	<!--			  
-<ul>
-<li><a href="https://www.facebook.com/groups/lamstan/"><img src="img/fl.png"></a>
-</li>
-				<!-- <div class="social">
-				  <div class="s-12 m-6 l-6">
-                  
-                     <a href="https://www.facebook.com/groups/lamstan/"><i class="icon-facebook_circle"></i></a> <a href="https://twitter.com/lamstanindia"><i class="icon-twitter_circle"></i></a> <a href="https://plus.google.com/u/0/109469743551860807742"><i class="icon-google_plus_circle"></i></a> <a href="https://www.instagram.com/info.lamstan/"><i class="icon-instagram_circle"></i></a>
-                  </div>
-				  
-				  
-				   </div>-->
-				  
-				  
-				  
-				  
-				  
-               </div>
-               
-               
+                  <p class="logo"><a href="index.html"><img src="img/Logo.png"></a></p>
+			</div>     
          </div>
         
          <!-- SIGN IN-->

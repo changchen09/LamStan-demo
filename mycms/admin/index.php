@@ -70,8 +70,8 @@
                     
                     <li><a href="index.php?view_cats"><i class="glyphicon glyphicon-tasks"></i> View All Categories</a></li>
                     
-					<li><a href="calendar.html"><i class="glyphicon glyphicon-calendar"></i> Calendar</a></li>
-                    <li><a href="stats.html"><i class="glyphicon glyphicon-stats"></i> Statistics (Charts)</a></li>
+					<li><a href="#"><i class="glyphicon glyphicon-calendar"></i> Calendar</a></li>
+                    <li><a href="#"><i class="glyphicon glyphicon-stats"></i>FeedBack </a></li>
                     <!-- <li class="submenu">
                          <a href="#">
                             <i class="glyphicon glyphicon-list"></i> Pages

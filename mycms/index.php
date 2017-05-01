@@ -76,12 +76,7 @@
 			  
                     
                <div class="tabs ">
-		 
-
-                  <div class="tab-item tab-active">
-	  
-                  <a class="tab-label active-btn navbar">SCHOOL NEWS</a>
-				  <?php			 
+			    <?php			 
 			 include("includes/database.php");
 			   
 			   $get_cats="select * from categories";
@@ -97,6 +92,12 @@
 	}
 			   
 ?> 
+		 
+
+                  <div class="tab-item tab-active">
+	  
+                  <a class="tab-label active-btn navbar">SCHOOL NEWS</a>
+				 
 					  <div class="s-12 m-6 l-6">
                   <div class="s-12 l-2">
                     <!--<div class="news-date">
@@ -107,7 +108,7 @@
 				
                    <?php
 
-				   $get_posts="select * from posts order by rand() LIMIT 0,5";
+				   $get_posts="select * from posts where category_id="$cat_id";
 				   $run_posts=mysqli_query($con,$get_posts);
 				   
 				   while($row_posts=mysqli_fetch_array($run_posts))

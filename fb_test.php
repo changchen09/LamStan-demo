@@ -25,12 +25,12 @@ if (isset($_POST['btn-feedback'])) {
 
 	$sql = "INSERT INTO feedback (email,name,message) VALUES ('$email','$name','$message')";
 
-	if ($conn->query($sql) === TRUE) {
-			$msg = "<div class='alert alert-success'>
+	if ($conn->query($sql) == TRUE) {
+			echo $msg = "<div class='alert alert-success'>
 						<span class='glyphicon glyphicon-info-sign'></span> &nbsp; successfully submitted !
 					</div>";
 		}else {
-			$msg = "<div class='alert alert-danger'>
+			echo $msg = "<div class='alert alert-danger'>
 						<span class='glyphicon glyphicon-info-sign'></span> &nbsp; error submitting !
 					</div>";
 		}

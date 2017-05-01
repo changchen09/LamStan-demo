@@ -64,42 +64,15 @@ if (isset($_POST['btn-login'])) {
    </head>
    
    <body class="size-1140">
-      <!-- TOP NAV WITH LOGO -->
-      <header>
-         <div id="topbar">
-            <div class="line">
-               <div class="s-12 m-6 l-6">
-                 <b> Lamstan Ladakh</b>
-               </div>
-               <div class="s-12 m-6 l-6">
-                  <div class="social right">
-                     <a href="https://www.facebook.com/groups/lamstan/"><i class="icon-facebook_circle"></i></a> <a href="https://twitter.com/lamstanindia"><i class="icon-twitter_circle"></i></a> <a href="https://plus.google.com/u/0/109469743551860807742"><i class="icon-google_plus_circle"></i></a> <a href="https://www.instagram.com/info.lamstan/"><i class="icon-instagram_circle"></i></a>
-                  </div>
-               </div>
-            </div>  
-         </div> 
-         <nav>
-            <div class="line">
-               <div class="s-12 l-2">
-                  <p class="logo"><a href="http://www.lamstan.com"><img src="img/Logo.png"></a></p>
-               </div>
-               <div class="top-nav s-12 l-10">
-                  <p class="nav-text">Custom menu text</p>
-                  
-               </div>
-            </div>
-         </nav>
-      </header>
 	  
       <section>
          
          <!-- FIRST BLOCK -->
          <div id="first-block">
             <div class="line">
-               <h1>*** COME AND JOIN LAMSTAN TOGETHER WE CAN MAKE A DIFFERENCE ***</h1>
-               <p>”Lamstan” attempts to bridge the opportunity divide.</p>
-               
-            </div>
+               <div class="s-12 l-2">
+                  <p class="logo"><a href="index.html"><img src="img/Logo.png"></a></p>
+			</div>     
          </div>
          
          <!-- ABOUT US -->
@@ -141,17 +114,60 @@ if (isset($_POST['btn-login'])) {
 		</form>
 			   
          </div>
- 
-            <article class="s-12 m-12 l-6">
-				<div class="s-12 m-12 l-4 center">
-					<a href="login.php">
-				<a href="#" class="btn btn-default" style="float:right;">Volunteer Registration</a>
-					
-					<!--h4><strong>VOLUNTEER <br> LOGIN HERE</strong></h4>--></a>
-				</div><br><br>
-               
-              
-            </article>
+		 
+		 <div class="s-12 m-12 l-6 media-container">
+		 
+		 <h1> Login Benefits </h1>
+
+			<div class="margin">
+                  <div class="s-12 m-6 l-6 margin-bottom">
+                     <i class="icon-tablet icon3x"></i>
+                     <h2>Fully updated</h2>
+                     <p>We used to update everything related to your career and about all kinds of exams.</p>
+                  </div>
+                  <div class="s-12 m-6 l-6 margin-bottom">
+                     <i class="icon-isight icon3x"></i>
+                     <h2>Push notifications</h2>
+                     <p>You'll get instant Web & App push notifications whenever we post anything on our site.</p>
+                  </div>
+                  <div class="s-12 m-6 l-6 margin-bottom">
+                     <i class="icon-star icon3x"></i>
+                     <h2>Categorized posts</h2>
+                     <p>For logged-in users, they'll get only their category of updates that they'll select during registration.</p>
+                  </div>
+                  <div class="s-12 m-6 l-6 margin-bottom">
+                     <i class="icon-heart icon3x"></i>
+                     <h2>Quick response</h2>
+                     <p>Anyone can seek help for their career related issues and guidance from our helpful seniors & experts right here.</p>
+                  </div>
+               </div>
+			   
+			<div class="margin">
+                  <div class="s-12 m-6 l-4 margin-bottom">
+                     <i class="icon-vector"></i>
+                     <div class="service-text">
+                        <h3>LamStan operates in remote areas and provide guidance to students regarding their career goals </h3>
+                        <p>In this enigmatic world of ours, where survival means struggle of any sort, needs to be introduced in full frame (modes) in order to get a glimpse of various avenues (courses), compatible with our interests & satisfactory enough for a happier life.</p>
+                     </div>
+                  </div>
+                  <div class="s-12 m-6 l-4 margin-bottom">
+                     <i class="icon-eye"></i>
+                     <div class="service-text">
+                        <h3>We look to the future</h3>
+                        <p>Adolescent is an age group where we not only become carefree due to emotion upheaval but also susceptible to wrong decisions, which might change the whole complexion of our future life. It is in this light that careful & meticulous guidance needs to be provided in order to let them think, decide & adore their future course.</p>
+                     </div>
+                  </div>
+                  <div class="s-12 m-12 l-4 margin-bottom">
+                     <i class="icon-random"></i>
+                     <div class="service-text">
+                        <h3>provide a very exclusive opportunity to seek advice from experienced professionals</h3>
+                        <p>Our training approach includes a mix of lectures, workshops, role play, site visits and social activities. Our aim is to bring up those who are outside the sphere of modern education system and career opportunities.</p>
+                     </div>
+                  </div>
+               </div>
+
+		 </div>
+		 
          </div>
 		 
         
@@ -159,13 +175,13 @@ if (isset($_POST['btn-login'])) {
       <footer>
          <div class="line">
             <div class="s-12 l-6">
-               <p>Copyright 2017, UIET Design </p>
-			   <p>CONTACT US: <strong>   <br>Ph. 08800332445 (New- Delhi)-
+               <p align="left">Copyright 2017, UIET Design </p>
+			   <p align="left">CONTACT US: <strong>   <br>Ph. 08800332445 (New- Delhi)-
        009596985101 (Leh- Ladakh)</strong>| <strong>info.lamstan@gmail.com</strong></p>
                
             </div>
             <div class="s-12 l-6">
-               <a class="right" href="http://www.uiet.puchd.ac.in/" title="~ Stanzin ~ Rinchen ~ Vaishali ~">Design and coding<br> by UIET students</a>
+               <a class="left" href="http://www.uiet.puchd.ac.in/" title="~ Stanzin ~ Rinchen ~ Vaishali ~">Design and coding<br> by UIET students</a>
             </div>
          </div>
       </footer>

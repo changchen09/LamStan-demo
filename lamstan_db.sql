@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 30, 2017 at 08:18 AM
+-- Generation Time: May 01, 2017 at 11:12 AM
 -- Server version: 5.7.14
 -- PHP Version: 7.0.10
 
@@ -40,7 +40,7 @@ CREATE TABLE `admin` (
 --
 
 INSERT INTO `admin` (`id`, `fullname`, `username`, `email`, `password`, `cpassword`) VALUES
-(1, 'hox', 'admin', 'admin@gmail.com', '123', '123'),
+(1, 'hox', 'admin', 'admin@gmail.com', '$2y$13$oJ8EZ2iu9rcDLjeFwEGsVOLzTMlcG.6kYS5M4PoEN5nNdDMsOzkN6', '123'),
 (2, 'Stanzin Angmo', 'stanzin_angmo', 'stanzin_angmo@gmail.com', 'appleapple', 'appleapple'),
 (3, 'Vaishali Dhiman', 'vaishali_dhiman', 'vaishali_dhiman@gmail.com', 'orangeorange', 'orangeorange'),
 (4, 'Chang Chen', 'changchen09', 'changchen09@gmail.com', 'cranberrycranberry', 'cranberrycranberry');
@@ -52,23 +52,25 @@ INSERT INTO `admin` (`id`, `fullname`, `username`, `email`, `password`, `cpasswo
 --
 
 CREATE TABLE `feedback` (
+  `id` int(11) NOT NULL,
   `email` varchar(255) NOT NULL,
   `name` varchar(255) NOT NULL,
   `message` varchar(255) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
--- --------------------------------------------------------
-
 --
--- Table structure for table `tbl_users`
+-- Dumping data for table `feedback`
 --
 
-CREATE TABLE `tbl_users` (
-  `user_id` int(11) NOT NULL,
-  `username` varchar(60) NOT NULL,
-  `email` varchar(60) NOT NULL,
-  `password` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+INSERT INTO `feedback` (`id`, `email`, `name`, `message`) VALUES
+(1, 'john@example.com', 'John', 'Doe'),
+(2, 'changchen09@gmail.com', 'Rinchen Changchup', 'C\'mon!!!'),
+(3, 'skarmazopa@gmail.com', 'skarma', 'damn!'),
+(4, 'again@gmail.com', 'again', 'Hahahaha'),
+(5, 'lobrulz09@gmail.com', 'Lobz', 'Gmail'),
+(9, 'draco@gmail.com', 'Draco', 'hahahah..'),
+(7, 'harry@live.com', 'Harry Potter', 'Good job, Chang!'),
+(10, 'changchen09@gmail.com', 'Rinchen Changchup', 'Testing...');
 
 -- --------------------------------------------------------
 
@@ -91,23 +93,30 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`user_id`, `fullname`, `username`, `email`, `password`, `whatsappno`, `usercategory`) VALUES
-(4, 'Chang Chen', 'changchen09', 'changchen09@gmail.com', '1234', 7814144148, 'College'),
-(5, 'STANZIN ZANGMO', 'sparrow14', 'skarmazopa@gmail.com', '123', 9888888888, 'School'),
-(6, 'fing', 'fing', 'fing@gmail.com', '12345', 12345, 'School'),
-(7, 'Dream Chronicles', 'dreamer33', 'dreamer33@gmail.com', 'dream', 123123123, 'School'),
-(9, 'Emma Stone', 'emma_stone', 'emma_stone@gmail.com', 'stone', 5765767567, 'College'),
-(10, 'Emma Watson', 'emma_watson', 'emma_watson@gmail.com', 'watson', 1235343467, 'School'),
-(11, 'Stanzin Angmo', 'stanzin', 'stanzin@gmail.com', '098', 875983745873, 'College'),
-(12, 'Sudeep Dey', 'sudip12', 'sudip12dey@gmail.com', 'armadillo55', 9115839404, 'College'),
-(13, 'Vaishali Dhiman', 'vaishali_dhiman', 'vaishali_dhiman@gmail.com', '1234', 123456789, 'Professional'),
-(14, 'Hashing', 'hash_me', 'hash_me@gmail.com', 'harrypotter13', 78973483274, 'School'),
-(15, 'frozen', 'frozen09', 'frozen09@gmail.com', 'dbfda985b9b61c026e4cb96649f5e01d', 7849372487, 'College'),
-(16, 'hello', 'hello', 'hello@gmail.com', 'draconis09', 84903284, 'School'),
-(17, 'hashing again', 'hashing again', 'hashing@gmail.com', 'mypassword', 98598205982, 'School'),
-(18, 'again hashing', 'hashing hashing', 'again@gmail.com', '$2y$13$cDdu.fD1IsJ/ljjwRvowoe5GBnHS3hDRE/oiIIduxWvykwO67t0.e', 905820958, 'College'),
-(19, 'Hash Done', 'hash_done', 'hash_done@gmail.com', '$2y$13$54kNGQa7dkA7L1WdEgi9NOLBYdlBumr24ce1RLgw3GswueoBS1zTO', 859032859082, 'School'),
-(20, 'My Self', 'my_self', 'my_self@gmail.com', '$2y$13$oM7Ncm2.f/PhXR87q.XXIOA78QCTemEwUvLLEBCS6Z1s1idAYD1ey', 758947578, 'School'),
-(21, 'Bonnie Wright', 'bonnie_wright', 'bonnie_wright@live.com', '$2y$13$krTb3Y28/bLGCIHNNNdKIODTXfF0rWYuTS5tpHn3qsdxaGTTyp7am', 78392758932, 'School');
+(1, 'Dream Chronicles', 'dreamer33', 'dreamer33@gmail.com', 'dream', 123123123, 'School'),
+(2, 'Emma Stone', 'emma_stone', 'emma_stone@gmail.com', 'stone', 5765767567, 'College'),
+(3, 'Emma Watson', 'emma_watson', 'emma_watson@gmail.com', 'watson', 1235343467, 'School'),
+(4, 'Stanzin Angmo', 'stanzin', 'stanzin@gmail.com', '098', 875983745873, 'College'),
+(5, 'Sudeep Dey', 'sudip12', 'sudip12dey@gmail.com', 'armadillo55', 9115839404, 'College'),
+(6, 'Vaishali Dhiman', 'vaishali_dhiman', 'vaishali_dhiman@gmail.com', '1234', 123456789, 'Professional'),
+(7, 'Hashing', 'hash_me', 'hash_me@gmail.com', 'harrypotter13', 78973483274, 'School'),
+(8, 'frozen', 'frozen09', 'frozen09@gmail.com', 'dbfda985b9b61c026e4cb96649f5e01d', 7849372487, 'College'),
+(9, 'hashing again', 'hashing again', 'hashing@gmail.com', 'mypassword', 98598205982, 'School'),
+(10, 'again hashing', 'hashing hashing', 'again@gmail.com', '$2y$13$cDdu.fD1IsJ/ljjwRvowoe5GBnHS3hDRE/oiIIduxWvykwO67t0.e', 905820958, 'College'),
+(11, 'Hash Done', 'hash_done', 'hash_done@gmail.com', '$2y$13$54kNGQa7dkA7L1WdEgi9NOLBYdlBumr24ce1RLgw3GswueoBS1zTO', 859032859082, 'School'),
+(12, 'My Self', 'my_self', 'my_self@gmail.com', '$2y$13$oM7Ncm2.f/PhXR87q.XXIOA78QCTemEwUvLLEBCS6Z1s1idAYD1ey', 758947578, 'School'),
+(13, 'Bonnie Wright', 'bonnie_wright', 'bonnie_wright@live.com', '$2y$13$krTb3Y28/bLGCIHNNNdKIODTXfF0rWYuTS5tpHn3qsdxaGTTyp7am', 78392758932, 'School'),
+(22, 'Wing Chun', 'wing_chun', 'wing_chun@gmail.com', '$2y$13$nDfA9GYotDpkhGijIbJOA.rSGqRaRoc01T6uJVGwqGqwgFX62Z2M2', 78947894789, 'Professional'),
+(23, 'Dream', 'dream', 'dream@gmail.com', '$2y$13$YE8YLl5QVhkvItC3Lna0du9uXSbCjJgqPlui8g29p481yXCQYgFi2', 787878787887, 'Professional'),
+(24, 'Chen Chang', 'chen09', 'chen09@gmail.com', '$2y$13$HaP8pTKWhgaU0.1J4yK/x.a/IV4jHN6jc5.buqXuqLf04RN.MejHS', 7814144148, 'School'),
+(25, 'Luna Lovegood', 'luna09', 'luna09@gmail.com', '$2y$13$AJzsdMpoEG5ajb8UanjYEuh.HcVyJLDM/XuSjDWLbIdbE.ityJQyG', 7849327583, 'School'),
+(26, 'Albus', 'albus', 'albus@gmail.com', '$2y$13$AnEolsmZ0pggust6lcnitejPOkFUrSS6aloviLu/KJynypDiCBIcK', 57395939993, ''),
+(27, 'Ron', 'ronald', 'ronald@gmail.com', '$2y$13$55yXNwbEEibC.AsWTksTO.Ug7Karv6vHrcuQYMT2Xd90g0L8gU0z.', 12344353535, ''),
+(28, 'Demo Run', 'demo_run', 'demo_run@gmail.com', '$2y$13$cNYzPKE0meOdsnNixWakuepLLdKa8Tcd48LVXMx39E0yL3kIMKzna', 89058432058, 'school'),
+(29, 'Hannah Creambell', 'hannah_creambell', 'hannah_creambell@gmail.com', '$2y$13$xanVcEiGIJdzYgW3PNvA6.moN8/Aopee68W2IJunZBTifwNyYKYdi', 123565776766, 'college'),
+(30, 'Draco Malfoy', 'draco_malfoy', 'draco_malfoy@gmail.com', '$2y$13$d/YJcQ8OjiOaXxdQIMRFa.p9WEDQIPvQzoMBWLZzzyL0MFzUueoIG', 474838575868, 'Professional'),
+(31, 'Rinchen Changchup', 'changchen09', 'changchen09@gmail.com', '$2y$13$.1hN/ulU0Kw0MCMyAp55Q.uplwEq.zJsUVD9UuwpSxHmeSms4rcFS', 7814144148, 'College'),
+(32, 'Demo Run', 'dreamer', 'dream@gmail.com', '$2y$13$nv7zzCxafs3vZMGg7qbKLeBa9WZmdG97wAE3BxBp2vdB0ozCDNrzq', 89402839403, 'School');
 
 -- --------------------------------------------------------
 
@@ -146,11 +155,10 @@ ALTER TABLE `admin`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `tbl_users`
+-- Indexes for table `feedback`
 --
-ALTER TABLE `tbl_users`
-  ADD PRIMARY KEY (`user_id`),
-  ADD UNIQUE KEY `email` (`email`);
+ALTER TABLE `feedback`
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `users`
@@ -176,15 +184,15 @@ ALTER TABLE `websiteusers`
 ALTER TABLE `admin`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 --
--- AUTO_INCREMENT for table `tbl_users`
+-- AUTO_INCREMENT for table `feedback`
 --
-ALTER TABLE `tbl_users`
-  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT;
+ALTER TABLE `feedback`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 --
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
+  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=33;
 --
 -- AUTO_INCREMENT for table `websiteusers`
 --
